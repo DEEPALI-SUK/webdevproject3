@@ -1,0 +1,93 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: brown;
+}
+section{
+	position: relative;
+	height: 100%;
+	width: 100%
+}
+h1{
+	text-align: center;
+	font-size: 44px;
+	color: gold;
+}
+.content1,.content2,.content3{
+	display: block;
+	float: left;
+	width: 30%;
+	border: 2px solid black;
+	background-color: mediumseagreen;
+	margin-left: 3%;
+	margin-top: 50px;
+}
+.content1{
+	margin-left: 30px;
+}
+.chicken,.beef,.sushi{
+	float:right;
+	clear: left;
+	margin-top: 0;
+	display: block;
+	padding-top: 0;
+	margin-left: 5%;
+	border-bottom:  2px solid black;
+	border-left:2px solid black;
+	width: 35%;
+	text-align: center;
+	
+}
+p{
+	clear: right;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.chicken{
+	background-color: magenta;
+}
+.beef{
+	background-color: red;
+	color: white;
+}
+.sushi{
+	background-color: orange;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.content1,.content2{
+		float: left;
+		width:40%;
+		margin-left: 3%;
+	}
+	.content3{
+		width: 82%;
+		clear: both;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 767px){
+	
+.content1{
+		width:80%;
+		float: left;
+		margin-left: 8%;
+		margin-right: 8%;
+}
+
+.content2{
+		clear: both;
+		float: left;
+		width:80%;
+		margin-left: 8%;
+		margin-right: 8%;
+}
+.content3{
+
+		width:80%;
+		float: left;
+		margin-left: 8%;
+		margin-right: 8%;
+}
+}
